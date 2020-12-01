@@ -9,11 +9,13 @@ public class CarController : MonoBehaviour
     
 
     Vector3 position;
-    
+    public uiManager ui;
+
     
     // Start is called before the first frame update
     void Start()
     {
+       // ui = GetComponent<uiManager> ();
         position = transform.position;  
     }
 
@@ -29,6 +31,7 @@ public class CarController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col) { 
         if (col.gameObject.tag == "Enemy Car") { 
             Destroy(gameObject);
+            ui.gameOverActivated();
         }
     }
 }

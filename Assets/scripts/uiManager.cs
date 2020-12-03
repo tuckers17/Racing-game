@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class uiManager : MonoBehaviour
 {
+
+    public Button[] buttons;
     public Text scoreText;
     bool gameOver;
     int score;
@@ -35,6 +38,10 @@ public class uiManager : MonoBehaviour
     public void gameOverActivated()
     {
         gameOver = true;
+        foreach (Button button in buttons)
+        {
+            button.gameObject.SetActive(true);
+        }
     }
     public void play()
     {
@@ -54,5 +61,20 @@ public class uiManager : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("menuScene");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

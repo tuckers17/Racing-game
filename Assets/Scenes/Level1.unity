@@ -167,8 +167,10 @@ MonoBehaviour:
   cars:
   - {fileID: 4698331997490306818, guid: 3f1e872ffb5d4734a9fa628592bb70a4, type: 3}
   - {fileID: 8933620466892303552, guid: 4db3fda63ae751441b9a187f4ef75d1e, type: 3}
+  - {fileID: 4432648714633583103, guid: 44d3bd8b53ab4fa4193e835edc650cef, type: 3}
+  - {fileID: 5636506974296147121, guid: ebbb7a6cc7229bb4f88745cfc6a0a52c, type: 3}
   maxpos: 2
-  delayTimer: 1
+  delayTimer: 0.75
 --- !u!1 &235607979
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +407,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -548,7 +550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &655996319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1173,7 +1175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1358846025
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1568,7 +1570,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742d1651ddb521a428800d70b0533c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1358846026}
+  - {fileID: 1998313614}
+  - {fileID: 655996320}
   scoreText: {fileID: 623178619}
+  score: 0
 --- !u!4 &1909903802
 Transform:
   m_ObjectHideFlags: 0
@@ -1679,7 +1686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1998313613
 RectTransform:
   m_ObjectHideFlags: 0

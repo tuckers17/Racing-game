@@ -11,7 +11,7 @@ public class uiManager : MonoBehaviour
     public Button[] buttons;
     public Text scoreText;
     bool gameOver;
-    int score;
+    public int score;
     // Start is called before the first frame update
     void Start()
     {
